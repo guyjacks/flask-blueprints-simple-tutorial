@@ -1,11 +1,11 @@
 from flask import Blueprint, render_template
 
-sharks = Blueprint('sharks', __name__, template_folder='templates/sharks')
+sharks = Blueprint('sharks', __name__, template_folder='templates')
 
 @sharks.route('/')
 def list():
     #return 'sharks list'
-    return render_template('list.html')
+    return render_template('sharks/list.html')
 
 @sharks.route('/create')
 def create():

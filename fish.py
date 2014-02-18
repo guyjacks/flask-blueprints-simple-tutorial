@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template
 
-fish = Blueprint('fish', __name__, template_folder='templates/fish')
+fish = Blueprint('fish', __name__, template_folder='templates')
 
 @fish.route('/')
 def list():
@@ -8,16 +8,16 @@ def list():
 
 @fish.route('/create')
 def create():
-    return 'create shark'
+    return 'create fish'
 
 @fish.route('/read')
 def read():
-    return 'read shark'
+    return 'read fish'
 
 @fish.route('/update')
 def update():
-    return 'update shark'
+    return 'update fish'
 
 @fish.route('/delete')
 def delete():
-    return 'delete shark'
+    return 'delete fish'
